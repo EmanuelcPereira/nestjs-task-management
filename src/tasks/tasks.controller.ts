@@ -21,7 +21,7 @@ import { Task } from './task.entity';
 import { TaskStatus } from './task-status.enum';
 import { TaskStatusValidationPipe } from './pipes/task-status-validation.pipe';
 import { GetUser } from 'src/auth/get-user.decoator';
-import { User } from 'src/auth/auth.entity';
+import { User } from 'src/auth/user.entity';
 
 @Controller('tasks')
 @UseGuards(AuthGuard())

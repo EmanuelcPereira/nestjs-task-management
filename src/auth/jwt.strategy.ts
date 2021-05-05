@@ -4,7 +4,7 @@ import { UnauthorizedException } from '@nestjs/common';
 import { Strategy, ExtractJwt } from 'passport-jwt';
 import { UserRepository } from './user.repository';
 import { JwtPayload } from './jwt-payload.interface';
-import { User } from './auth.entity';
+import { User } from './user.entity';
 import * as config from 'config';
 
 export class JwtStrategy extends PassportStrategy(Strategy) {
